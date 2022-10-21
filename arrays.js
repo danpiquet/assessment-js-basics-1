@@ -4,6 +4,9 @@
 const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
+
+// Kyle's difference: no need for arguments in slice if you just want the entire array -- it will default to select all values of the array
+
 let colorCopy = faveColors.slice(0,faveColors.length)
 console.log(colorCopy)
 //////////////////PROBLEM 2////////////////////

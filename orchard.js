@@ -109,7 +109,7 @@ console.log(averageDailyAcres)
     any Math methods. 
 
 */
-
+// misread the instructions. This code doesn't return what was needed. Correct code below it
 let acresLeft = 174 
 let days = 0
 
@@ -121,6 +121,12 @@ while(days < 7){
 }
 console.log(days)
 
+//correct code
+while(acresLeft > 0){
+    acresLeft -= averageDailyAcres
+    days++
+}
+console.log(days)
 
 
 // PROBLEM 4
@@ -225,6 +231,8 @@ console.log(`Fuji pounds: ${fujiPounds}, Gala Pounds: ${galaPounds}, Pink Pounds
 
 // CODE HERE
 // I created a constant variable to format the output to USD to make it easier to read.
+
+// divided prices by 100 erroneously. correct code below it
 const usdFormatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -237,6 +245,18 @@ console.log(`Your profit on the Fuji apple harvest is ${usdFormatter.format(fuji
 console.log(`Your profit on the Gala apple harvest is ${usdFormatter.format(galaProfit)}`)
 console.log(`Your profit on the Pink apple harvest is ${usdFormatter.format(pinkProfit)}`)
 
+
+const usdFormatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+})
+let fujiProfit = fujiPounds * fujiPrice
+let galaProfit = galaPounds * galaPrice
+let pinkProfit = pinkPounds * pinkPrice
+
+console.log(`Your profit on the Fuji apple harvest is ${usdFormatter.format(fujiProfit)}`)
+console.log(`Your profit on the Gala apple harvest is ${usdFormatter.format(galaProfit)}`)
+console.log(`Your profit on the Pink apple harvest is ${usdFormatter.format(pinkProfit)}`)
 
 
 

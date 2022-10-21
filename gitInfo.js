@@ -65,7 +65,7 @@ let gitAddCode = "git add ."
 */
 
 //CODE HERE
-let gitCommitDefinition = "git comomit takes the snapshot of your repo at a specific point in time. It takes staged changes and records them."
+let gitCommitDefinition = "git commit takes the snapshot of your repo at a specific point in time. It takes staged changes and records them."
 let gitCommitCode = "git commit -m 'initial commit'" 
 
 //////////////////PROBLEM 8////////////////////
